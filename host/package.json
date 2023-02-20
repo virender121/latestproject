@@ -7,7 +7,7 @@
     "build:start": "cd dist && PORT=8080 npx serve",
     "start": "webpack serve --open --mode development",
     "start:live": "webpack serve --open --mode development --live-reload --hot",
-    "generate": "plop --componentPath 'src'",
+    "generate": "plop --plopfile config/index.js --componentPath 'src'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -45,7 +45,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.13.10",
-    "@stitches/react": "^1.2.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }

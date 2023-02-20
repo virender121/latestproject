@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Counter from 'remote/Counter'
-import Compute from "./Compute";
+import Input from "./components/views/Input/Input";
 import "./index.scss";
 
 const App = () => (
@@ -9,8 +9,7 @@ const App = () => (
     <div>Name: host</div>
     <div>Framework: react</div>
       <Counter/>
-      <Compute/>
-      <Button/>
+      <Input/>
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));

@@ -1,11 +1,12 @@
 import React from 'react'
+import Counter from 'remote/Counter'
 
-function Compute() {
-  return (
-    <div>
-      <h1>compute</h1>
-    </div>
-  )
+export const Compute = () => {
+    return (
+        <div>Compute
+            <Counter />
+        </div>
+
+    )
 }
-
-export default Compute
+export default Compute;
